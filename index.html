@@ -639,7 +639,6 @@ CRITICAL: Your final recommendation MUST be based on:
    - Total loss probability: 0.5% annually
    - Major damage probability: 2% annually  
    - Minor repairs probability: 5% annually
-   - Use these if user doesn't specify their risk profile
 
 CONVERSATION GUIDELINES:
 - You're having a friendly chat, not conducting an interrogation
@@ -647,7 +646,7 @@ CONVERSATION GUIDELINES:
 - Current question count: ${this.questionCount}/${this.maxQuestions}
 - **ASK ONLY ONE QUESTION PER RESPONSE** - Wait for user to answer before asking the next
 - Lead the conversation naturally toward gathering key info for Kelly Criterion calculation
-- NO math formulas or jargon in responses (but use the math internally) and keep any reasoning thoughts or justifications to yourself, not in the response
+- Omit any math formulas, jargon, and internal notes/calculations in the responses
 
 KEY INFO TO GATHER (for Kelly Criterion & article frameworks):
 1. Watch value (essential for Kelly Criterion)
@@ -837,3 +836,4 @@ Respond warmly and conversationally. Ask ONLY ONE question at a time. If you hav
 </body>
 
 </html>
+
