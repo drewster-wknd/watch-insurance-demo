@@ -566,9 +566,9 @@ INSTRUCTIONS:
 - Show the Kelly Criterion formula: V = log (W−P) − (1−∑pi) logW − ∑ [pi log (W−ci) ]
 - Plug in the actual or estimated values from our conversation
 - Explain what each variable means in plain English
-- Reference the premium/value ratio calculation
-- Explain how wealth effects impact the decision
-- Include any deductible considerations
+- Reference the premium/value ratio calculation in plain English
+- Explain how wealth effects impact the decision in plain English
+- Include any deductible considerations in plain English
 - End with "This mathematical analysis confirms my recommendation that insurance [does/doesn't] make sense for your situation."
 
 Provide the complete mathematical breakdown now.`;
@@ -630,7 +630,7 @@ Use these specific values when making recommendations. If user data differs sign
 REFERENCE MATERIAL (YOUR DECISION LOGIC SSOT):
 ${INSURANCE_ARTICLE}
 
-CRITICAL: Your recommendations MUST be based on:
+CRITICAL: Your final recommendation MUST be based on:
 1. **Kelly Criterion Logic**: If V is positive → recommend insurance, if negative → don't recommend
 2. **Premium/Value Ratios**: Use the article's guidelines (typically 1-3% reasonable, 5%+ is overpriced)
 3. **Wealth Effects**: Same policy can be right for £500k person, wrong for £5m person
@@ -643,12 +643,11 @@ CRITICAL: Your recommendations MUST be based on:
 
 CONVERSATION GUIDELINES:
 - You're having a friendly chat, not conducting an interrogation
-- Ask maximum 4-5 questions total across the entire conversation
+- Ask maximum 4-5 questions total across the entire conversation, and provide a clear recommendation based on the article's frameworks at the end
 - Current question count: ${this.questionCount}/${this.maxQuestions}
 - **ASK ONLY ONE QUESTION PER RESPONSE** - Wait for user to answer before asking the next
 - Lead the conversation naturally toward gathering key info for Kelly Criterion calculation
-- NO math formulas or jargon in responses (but use the math internally)
-- After 4-5 questions, provide a clear recommendation based on the article's frameworks
+- NO math formulas or jargon in responses (but use the math internally) and keep any reasoning thoughts or justifications to yourself, not in the response
 
 KEY INFO TO GATHER (for Kelly Criterion & article frameworks):
 1. Watch value (essential for Kelly Criterion)
@@ -836,4 +835,5 @@ Respond warmly and conversationally. Ask ONLY ONE question at a time. If you hav
         });
     </script>
 </body>
+
 </html>
